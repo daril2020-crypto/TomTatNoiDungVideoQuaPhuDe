@@ -1,6 +1,6 @@
-# Đề tài #17 — Tóm tắt Nội dung Video dựa trên Phụ đề
+# Đề tài Tóm tắt Nội dung Video dựa trên Phụ đề
 
-**Môn:** Xử lý Ngôn ngữ Tự nhiên | **Đơn vị:** ĐH Công nghiệp TP.HCM
+**Môn:** Xử lý Ngôn ngữ Tự nhiên 
 
 Hệ thống so sánh **4 phương pháp tóm tắt văn bản** trên tập dữ liệu hội thoại DialogSum, đánh giá bằng ROUGE-1/2/L, BERTScore F1 và BLEU-4.
 
