@@ -1,0 +1,24 @@
+model_name: facebook/bart-large-cnn
+max_source_length: 1024
+max_target_length: 128
+
+# Training
+learning_rate: 3.0e-5
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 8
+gradient_accumulation_steps: 4   # effective batch size = 16
+num_train_epochs: 3
+weight_decay: 0.01
+warmup_ratio: 0.06
+bf16: true                        # requires A5000 / Ampere+ GPU
+
+# Evaluation & checkpointing
+evaluation_strategy: epoch
+save_strategy: epoch
+load_best_model_at_end: true
+metric_for_best_model: rougeL
+early_stopping_patience: 2
+
+# Generation
+predict_with_generate: true
+generation_num_beams: 4

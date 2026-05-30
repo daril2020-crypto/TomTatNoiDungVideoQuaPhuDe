@@ -1,0 +1,27 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# HuggingFace Datasets cache & large data files
+data/raw/
+data/raw/dialogsum/
+
+# Pre-trained & Fine-tuned Models (Gigabytes of PyTorch weights)
+models/
+models/bart_finetuned/
+models/pegasus_finetuned/
+
+# System and IDE configurations
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
